@@ -1,7 +1,7 @@
 package native
 
 // 7.6 Event Types Table
-type EventType int8
+type EventType int32
 
 const (
 	EventTypeImpression      EventType = 1 // Impression
