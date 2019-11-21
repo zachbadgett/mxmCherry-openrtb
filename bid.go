@@ -1,6 +1,10 @@
 package openrtb
 
-import "encoding/json"
+import (
+	"encoding/json"
+
+	"github.com/shopspring/decimal"
+)
 
 // 4.2.3 Object: Bid
 //
@@ -52,7 +56,7 @@ type Bid struct {
 	//   for a unit impression only. Note that while the type indicates
 	//   float, integer math is highly recommended when handling
 	//   currencies (e.g., BigDecimal in Java).
-	Price float64 `json:"price"`
+	Price decimal.Decimal `json:"price"`
 
 	// Attribute:
 	//   nurl
